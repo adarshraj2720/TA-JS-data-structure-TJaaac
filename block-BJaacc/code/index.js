@@ -23,7 +23,7 @@ console.log(students[42])
 // 10. Check the length of object named `students`.
 Object.keys(students).length
 // 11. Can you define a key of `let or var` in any object? Reason.
-
+students["let"]="Any value";
 // 12. Delete the `isAdult` property from the object `students`. Also, print the object before or after deleting the property
 students;
 
