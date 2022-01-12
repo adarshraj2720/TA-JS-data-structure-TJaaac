@@ -93,9 +93,17 @@ for(i=0;i<movies[i].year;i++){
 console.log(`false`)
   }
 }
+
+
+
 // 23. Log the title of all three movies one by one.
 for(i=0;i<movies[i].title.length;i++){
   console.log(movies[i].title);
+}
+
+
+for(let movie of movies){
+  console.log(movie.title);
 }
 // 24. Log if the title of the first movie is `Hannah` or not
 if(movies[0].title=='Hannah'){
@@ -107,14 +115,33 @@ if(movies[0].title=='Hannah'){
 for(i=0;i<movies[i].actors.length;i++){
   console.log(movies[i].actors.length);
 }
+
+
+for(let movie of movies){
+  for(let actor of movie.actors){
+    console.log(actor)
+  }
+}
 // 26. Log the number of genres in all three movies one by one
 for(i=0;i<movies[i].genres.length;i++){
   console.log(movies[i].genres.length);
+}
+
+for(let movie of movies){
+  console.log(movie.genres.length)
 }
 // 27. Log the name of all the movies with more than 1 genre
 for(i=0;i<movies[i].genres.length;i++){
   if(movies[i].genres.length>=1){
          console.log(movies[i].genres)
+        }
+      }
+
+
+
+      for(let movie of movies){
+        if(movie.genres.length>1){
+          console.log(movie.title)
         }
       }
 // 28. Log the name of all the movies with more than 1 actors
