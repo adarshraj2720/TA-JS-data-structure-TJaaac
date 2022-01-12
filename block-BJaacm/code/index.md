@@ -15,21 +15,23 @@ let newUser = user;
 - Take a photo/screenshot and add it to the folder `code`
 
 <!-- To add this image here use ![name](./hello.jpg) -->
+![memory-representation-img](./memory-represent.jpg)
 
 2. Answer the following with reason:
 
-- `user == newUser;` // output and reason
-- `user === newUser;`
-- `user.name === newUser.name;`
-- `user.name == newUser.name;`
-- `user.sibling == newUser.sibling;`
-- `user.sibling === newUser.sibling;`
-- `user.sibling == allBrothers;`
-- `user.sibling === allBrothers;`
-- `brothersCopy === allBrothers;`
-- `brothersCopy == allBrothers;`
-- `brothersCopy == user.sibling;`
-- `brothersCopy === user.sibling;`
-- `brothersCopy[0] === user.sibling[0];`
-- `brothersCopy[1] === user.sibling[1];`
-- `user.sibling[1] === newUser.sibling[1];`
+- `user == newUser;` // output and reason//true - here the copy by reference take place both value allocate the same address.
+- `user === newUser;`//true - here the copy by reference take place both value allocate the same address.
+- `user.name === newUser.name;`//true - here access the name  from the same address location beacuse here take the copy-by-reference 
+- `user.name == newUser.name;`//true - here access the name  from the same address location beacuse here take the copy-by-reference 
+- `user.sibling == newUser.sibling;`//true  - here access the sibling  from the same address location beacuse here take the copy-by-reference 
+- `user.sibling === newUser.sibling;`//true -  here access the sibling  from the same address location beacuse here take the copy-by-reference 
+- `user.sibling == allBrothers;`//false - here both are diffrent address so both are not equal 
+- `user.sibling === allBrothers;`//false - here both are diffrent address so both are not equal 
+- `brothersCopy === allBrothers;`//false - here both are diffrent address so both are not equal 
+- `brothersCopy == allBrothers;`//false - here both are diffrent address so both are not equal 
+- `brothersCopy == user.sibling;`//true - here the condition check with double equal to here declare and assign that value so that is equal.
+- `brothersCopy === user.sibling;`//true - here the condition check with triple equal to here declare and assign that value so that is equal.
+- `brothersCopy[0] === user.sibling[0];`//true - here the condition check with triple equal to  in that brotherCopy assign a value user.name then both value are same.
+- `brothersCopy[1] === user.sibling[1];`//true - here the condition is check  triple equal to  in that brotherCopy assign a value user.name then both value are same.
+
+- `user.sibling[1] === newUser.sibling[1];`//true - here the condition is check  triple equal to  both access the sibling both are eqaul because both has same address location . beacuse here use of copy-by-rference
