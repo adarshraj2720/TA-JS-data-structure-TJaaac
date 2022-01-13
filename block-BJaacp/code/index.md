@@ -11,8 +11,8 @@ let arr2 = arr;
 
 Answer the following with reason after going through the above code:
 
-- `[10] === [10]`
-- What is the value of obj? // answer
+- `[10] === [10]`//false
+- What is the value of obj? // {surname:'stark'}
 - `obj == newObj`// false - because both has different  address location
 - `obj === newObj`// false - because both has different  address location
 - `user === newObj`// false - because both has different  address location
